@@ -6,25 +6,25 @@
    ========================================================================== */
 
 (function () {
-  // TODO: tools/setup-google-form.gs で作ったフォームの formResponse の URL と entry ID に差し替える。
-  // 差し替えるまで送信はエラーになる（no-cors では失敗を検知できず、回答が黙って消えるため）
-  var FORM_ACTION = '';
+  // tools/setup-google-form.gs で作った Google フォームの送信先。
+  // 空にすると送信はエラーになる（no-cors では失敗を検知できず、回答が黙って消えるため）
+  var FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfVFetdrdCecXJMNHZZokv77nrBh30GlskYn8DY4UDah1xrbg/formResponse';
 
   // LP の name 属性 → Google フォームの entry ID
   // 設問を作り直した場合は ID が変わるので、公開フォームから取り直すこと
   var ENTRY = {
-    name:       'entry.TODO',
-    email:      'entry.TODO',
-    occupation: 'entry.TODO',
-    income:     'entry.TODO',
-    equity:     'entry.TODO',
-    holdings:   'entry.TODO',
-    timing:     'entry.TODO',
-    topics:     'entry.TODO',
-    message:    'entry.TODO',
-    consult:    'entry.TODO',
-    consent:    'entry.TODO',
-    lang:       'entry.TODO'
+    name:       'entry.853491795',
+    email:      'entry.1230315088',
+    occupation: 'entry.876098096',
+    income:     'entry.839817181',
+    equity:     'entry.2140703510',
+    holdings:   'entry.1174309847',
+    timing:     'entry.1930880809',
+    topics:     'entry.1111219502',
+    message:    'entry.997250793',
+    consult:    'entry.2103739291',
+    consent:    'entry.614138204',
+    lang:       'entry.469376694'
   };
 
   // 特典はサンクス表示の LINE 友だち追加ボタンから受け取ってもらう（PDF のリンクは置かない）
@@ -86,7 +86,7 @@
     status.textContent = '';
     status.className = 'form-status';
 
-    var sent = FORM_ACTION && ENTRY.lang.indexOf('TODO') < 0
+    var sent = FORM_ACTION
       ? fetch(FORM_ACTION, { method: 'POST', mode: 'no-cors', body: body })
       : Promise.reject(new Error('form action is not configured'));
 

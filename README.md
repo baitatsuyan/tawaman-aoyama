@@ -40,7 +40,6 @@ python3 -m http.server 8000 -d site
 
 | 箇所 | やること |
 |---|---|
-| `site/assets/form.js` の `FORM_ACTION` と `ENTRY` | `tools/setup-google-form.gs` で Google フォームを作り、formResponse の URL と entry ID を入れる。**入れるまで送信はエラーになる**（回答が黙って消えないようにしている） |
 | `site/index.html` の LINE ボタン | `https://lin.ee/TODO` を LINE公式アカウント「BAI Capital」の友だち追加URLに |
 | `site/tokushoho/index.html` | 代表者名・電話の受付時間 |
 | プライバシーポリシーのリンク | `#privacy-policy`（フッターへのアンカー）のまま。青山綜合地所のポリシーURLに差し替え |
