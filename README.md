@@ -9,6 +9,7 @@
 ├── site/                 公開されるのはこのフォルダだけ
 │   ├── index.html        LP
 │   ├── tokushoho/        特定商取引法に基づく表記
+│   ├── privacy/          プライバシーポリシー
 │   ├── dl/…/*.pdf        特典PDF（LINE でだけ案内する）
 │   ├── _headers          特典PDFを noindex にする
 │   └── assets/
@@ -35,14 +36,6 @@
 python3 -m http.server 8000 -d site
 # http://localhost:8000/
 ```
-
-## 公開前に差し替えるもの
-
-`grep -rn TODO site` で拾えます。
-
-| 箇所 | やること |
-|---|---|
-| プライバシーポリシーのリンク | `#privacy-policy`（フッターへのアンカー）のまま。青山綜合地所のポリシーURLに差し替え |
 
 ## 特典の渡し方
 
