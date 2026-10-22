@@ -42,7 +42,6 @@ python3 -m http.server 8000 -d site
 
 | 箇所 | やること |
 |---|---|
-| `site/tokushoho/index.html` | 代表者名・電話の受付時間 |
 | プライバシーポリシーのリンク | `#privacy-policy`（フッターへのアンカー）のまま。青山綜合地所のポリシーURLに差し替え |
 
 ## 特典の渡し方
