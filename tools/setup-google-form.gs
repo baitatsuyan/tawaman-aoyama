@@ -10,6 +10,7 @@
  *   3. 関数 setupForm を選んで「実行」（初回は権限の承認が必要）
  *
  * 注意: 実行するとフォーム内の既存の設問はすべて削除されます。
+ * 設問を作ったあと、フォームを公開して回答の受付を始めます。
  *
  * 選択肢の文言は LP 側の value と完全一致している必要があります。
  * 変更する場合は site/index.html の value も同時に直してください。
@@ -26,7 +27,6 @@ function setupForm() {
   form.setDescription('LP から送信される回答の受付用フォームです。');
   form.setCollectEmail(false);
   form.setLimitOneResponsePerUser(false);
-  form.setAcceptingResponses(true);
   try { form.setRequireLogin(false); } catch (e) { /* 個人アカウントでは設定不可 */ }
 
   form.addTextItem().setTitle('お名前');
@@ -74,6 +74,15 @@ function setupForm() {
   form.addCheckboxItem().setTitle('プライバシーポリシーへの同意').setChoiceValues(['同意する']);
 
   form.addListItem().setTitle('言語').setChoiceValues(['日本語']);
+
+  // 新しい Google フォームは作成直後が「非公開」で、その状態では回答の受付を設定できない。
+  // 設問を作り終えてから公開する
+  try {
+    if (!form.isPublished()) form.setPublished(true);
+    form.setAcceptingResponses(true);
+  } catch (e) {
+    Logger.log('公開できませんでした。フォームの編集画面右上の「公開」を押してください（' + e.message + '）');
+  }
 
   Logger.log('作成完了: ' + form.getPublishedUrl());
 }
