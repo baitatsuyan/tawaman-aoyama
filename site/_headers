@@ -1,0 +1,5 @@
+# Netlify のレスポンスヘッダー設定
+
+# 特典PDF（LINE のあいさつメッセージでだけ案内する）を検索結果に出さない
+/dl/*
+  X-Robots-Tag: noindex, nofollow

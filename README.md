@@ -9,6 +9,8 @@
 ├── site/                 公開されるのはこのフォルダだけ
 │   ├── index.html        LP
 │   ├── tokushoho/        特定商取引法に基づく表記
+│   ├── dl/…/*.pdf        特典PDF（LINE でだけ案内する）
+│   ├── _headers          特典PDFを noindex にする
 │   └── assets/
 │       ├── style.css     スタイル
 │       ├── form.js       フォーム送信（Google フォーム）
@@ -45,7 +47,11 @@ python3 -m http.server 8000 -d site
 
 ## 特典の渡し方
 
-アンケートの送信後、サンクス表示に LINE公式アカウント「BAI Capital」の友だち追加ボタンを出します。資料（PDF）は LINE 側で送ります（友だち追加時のあいさつメッセージなど）。このサイトには PDF を置きません。
+アンケートの送信後、サンクス表示に LINE公式アカウント「BAI Capital」の友だち追加ボタンを出します。資料（PDF）は、友だち追加時のあいさつメッセージで次のURLを案内します。
+
+https://tawamanoya-aoyama.netlify.app/dl/poV8ulyWnwWlkAWcUixCB5UL/real-estate-strategy-seminar.pdf
+
+推測されにくいパスに置いているだけなので、URL を知っていれば誰でも取得できます（LP の HTML・JS には書いていません）。検索結果に出ないよう `site/_headers` で noindex にしています。PDF を差し替えるときは同じファイル名で上書きすれば URL は変わりません。URL を無効にしたいときはフォルダ名を変え、LINE のメッセージも直します。
 
 ## フォーム
 
