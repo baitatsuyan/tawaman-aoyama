@@ -1,0 +1,5 @@
+# Netlify の設定（サイト tawamanoya-aoyama 用）。
+# site/ をそのまま配信する（README・CLAUDE.md・tools/ は公開しない）。
+[build]
+  publish = "site"
+  command = ""
