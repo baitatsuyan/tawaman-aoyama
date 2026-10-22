@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -35,11 +35,11 @@
     <div class="rule-dark"></div>
 
     <p class="hero-kicker">高所得の会社員が、はじめの一歩を踏み出すための個別相談</p>
-    <h1>タワマンに住む。<br>そのうえで、一棟を持つ。</h1>
+    <h1>タワマンに住む。<br>そのうえで、<br class="sp-only">一棟を持つ。</h1>
     <p class="hero-lead">年収は十分にある。それでも、資産が増えている実感がない——。<br>住む家と、持つ資産。この二つを切り分けて設計するところから、現役の投資家が一対一で伴走します。</p>
 
     <div class="cta-row">
-      <a class="btn" href="#form">無料特典をLINEで受け取る（約2分のアンケート）</a>
+      <a class="btn btn--2line" href="#form"><span>無料特典をLINEで受け取る</span><small>約2分のアンケートに答えるだけ</small></a>
       <a class="btn btn--ghost" href="#form">無料の個別相談を申し込む</a>
     </div>
 
@@ -144,7 +144,7 @@
         <p>保有しているのは、タワーマンション8戸と、一棟アパート3棟。総額はおよそ20億円です。利回りを追う投資から、土地の資産性を取りにいく投資へ——その方針転換を、売却も借り換えも含めて自分の資金で通してきました。Xでは取得価格、金利、毎月の返済額まで実数で公開しています。</p>
 
         <div class="quote">
-          <p class="quote-main">買った実績ではなく、「買わなかった理由」まで話せる相手と組んでください。</p>
+          <p class="quote-main">買った実績ではなく、<br><span class="nw">「買わなかった理由」</span>まで話せる相手と組んでください。</p>
           <p class="quote-sub">止めるべき案件は、止めるべきだとはっきり申し上げます。</p>
         </div>
       </div>
@@ -159,7 +159,7 @@
     <div class="stack gap-16">
       <p class="eyebrow">Partnership</p>
       <h2 class="h2">相談だけで、終わらせない。</h2>
-      <p class="lead">この個別相談は、宅地建物取引業者である <a href="https://aoyama-re.co.jp/" target="_blank" rel="noopener">株式会社青山綜合地所</a> との連携で提供しています。投資家としての判断支援と、宅建業者としての取引実務。この二つが同じテーブルに乗るので、方針が決まったあと「で、どこで買うのか」で止まりません。</p>
+      <p class="lead">この個別相談は、宅地建物取引業者である<a class="nw" href="https://aoyama-re.co.jp/" target="_blank" rel="noopener">株式会社青山綜合地所</a>との連携で提供しています。投資家としての判断支援と、宅建業者としての取引実務。この二つが同じテーブルに乗るので、方針が決まったあと「で、どこで買うのか」で止まりません。</p>
     </div>
 
     <div class="grid grid-3">
@@ -282,7 +282,7 @@
           <div class="is-main"><dt>購入できる物件価格の目安</dt><dd><output data-out="price">—</output>万円</dd></div>
           <div><dt>借入額の目安</dt><dd><output data-out="loan">—</output>万円</dd></div>
           <div><dt>毎月の返済額</dt><dd><output data-out="monthly">—</output>円</dd></div>
-          <div><dt>年収倍率（借入額）</dt><dd><output data-out="multiple">—</output>倍</dd></div>
+          <div><dt>年収倍率<span class="nw">（借入額）</span></dt><dd><output data-out="multiple">—</output>倍</dd></div>
         </dl>
       </div>
       <p class="tool-note">年収×返済負担率を年間の返済額の上限とし、元利均等返済・固定金利・ボーナス返済なしで借入額を逆算しています。物件価格は「借入額＋自己資金」から諸費用（物件価格の約7%と仮定）を差し引いた目安です。金融機関の審査では実際の金利より高い「審査金利」で計算されることが多く、ほかの借入・勤続年数・勤務先・物件の評価によっても借入額は変わります。融資の可否や条件をお約束するものではありません。</p>
@@ -322,13 +322,13 @@
           </div>
         </div>
         <dl class="loan-result" aria-live="polite">
-          <div class="is-main"><dt>年間の手残り（税引前）</dt><dd><output data-out="cf">—</output>万円</dd></div>
+          <div class="is-main"><dt>年間の手残り<span class="nw">（税引前）</span></dt><dd><output data-out="cf">—</output>万円</dd></div>
           <div><dt>月あたりの手残り</dt><dd><output data-out="cfm">—</output>万円</dd></div>
-          <div><dt>家賃収入（空室を考慮）</dt><dd><output data-out="rent">—</output>万円/年</dd></div>
+          <div><dt>家賃収入<span class="nw">（空室を考慮）</span></dt><dd><output data-out="rent">—</output>万円/年</dd></div>
           <div><dt>経費</dt><dd><output data-out="cost">—</output>万円/年</dd></div>
           <div><dt>ローン返済</dt><dd><output data-out="debt">—</output>万円/年</dd></div>
-          <div><dt>返済比率（返済÷家賃収入）</dt><dd><output data-out="dsr">—</output>%</dd></div>
-          <div><dt>実質利回り（経費控除後÷総投資額）</dt><dd><output data-out="noi">—</output>%</dd></div>
+          <div><dt>返済比率<span class="nw">（返済÷家賃収入）</span></dt><dd><output data-out="dsr">—</output>%</dd></div>
+          <div><dt>実質利回り<span class="nw">（経費控除後÷総投資額）</span></dt><dd><output data-out="noi">—</output>%</dd></div>
           <div><dt>10年後のローン残高</dt><dd><output data-out="bal10">—</output>万円</dd></div>
         </dl>
       </div>
@@ -361,7 +361,7 @@
       <div class="gift-main">
         <p class="eyebrow">Free gift</p>
         <h2 class="h2">セミナー資料<br>「高所得会社員のための不動産戦略」</h2>
-        <p class="lead">賃貸か、購入か、それとも第三の道か ── 与信という眠れる資産の使い方。実際のセミナーで使用した全31ページの資料を、そのままお渡しします。約2分のアンケートにお答えのうえ、LINE公式アカウント「BAI Capital」を友だち追加いただくと、LINEでお届けします。</p>
+        <p class="lead">賃貸か、購入か、それとも第三の道か ── 与信という眠れる資産の使い方。実際のセミナーで使用した全31ページの資料を、そのままお渡しします。<br>約2分のアンケートにお答えのうえ、LINE公式アカウント<span class="nw">「BAI Capital」</span>を友だち追加いただくと、資料がLINEで届きます。</p>
 
         <div class="gift-list">
           <div class="gift-item">
@@ -397,7 +397,7 @@
 
       <aside class="gift-aside">
         <img src="assets/seminar-cover.jpg" alt="セミナー資料の表紙" width="2000" height="1125" loading="lazy">
-        <p class="gift-meta">PDF ／ 全31ページ<br>アンケート回答後、LINEの友だち追加でお届け</p>
+        <p class="gift-meta">PDF ／ 全31ページ<br>アンケート回答後、<br>LINEの友だち追加でお届けします</p>
         <a class="btn btn--block" href="#form">無料で受け取る</a>
       </aside>
 
@@ -433,7 +433,7 @@
         <div class="plan-price">仲介手数料<small> のみ</small></div>
         <div class="plan-note">法定の上限額以内</div>
         <div class="rule-soft"></div>
-        <p class="plan-body">買う物件が決まったら、宅地建物取引業者 青山綜合地所 が、伴走プランとは別の媒介契約で売買を仲介します。仲介手数料は宅地建物取引業法の上限額（売買価格が400万円を超える場合は「売買価格×3％＋6万円」に消費税を加えた額）以内です。伴走プランをご利用いただいた場合、お支払い済みの料金は仲介手数料から差し引きます。</p>
+        <p class="plan-body">買う物件が決まったら、宅地建物取引業者の青山綜合地所が、伴走プランとは別の媒介契約で売買を仲介します。仲介手数料は宅地建物取引業法の上限額（売買価格が400万円を超える場合は「売買価格×3％＋6万円」に消費税を加えた額）以内です。伴走プランをご利用いただいた場合、お支払い済みの料金は仲介手数料から差し引きます。</p>
       </div>
     </div>
   </div>
@@ -582,7 +582,7 @@
       </fieldset>
 
       <div class="field">
-        <label for="f-free">いま一番知りたいこと・困っていること<span class="opt">任意</span></label>
+        <label for="f-free">いま知りたいこと・困っていること<span class="opt">任意</span></label>
         <textarea id="f-free" name="message" rows="4" placeholder="例：住宅ローンを組んだあとでも、一棟アパートの融資を受けられるか知りたい"></textarea>
       </div>
 
@@ -606,7 +606,7 @@
 
       <div class="privacy-box">
         <div class="fieldset-label">個人情報の取り扱いについて</div>
-        <p>本フォームでお預かりする個人情報は、宅地建物取引業者である株式会社青山綜合地所（東京都知事（3）第99195号／東京都中央区湊2-11-1 シティタワー銀座東922）が取得し、同社の<a href="privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に従って取り扱います。個別相談は、同社から業務委託を受けたタワマン大家が担当し、委託の範囲内で個人情報を取り扱います。特典資料は、LINE公式アカウント「BAI Capital」からお届けします。利用目的は、資料のご提供、個別相談のご案内および関連するご連絡に限られ、業務の委託に伴う場合を除き、ご本人の同意なく第三者に提供することはありません。開示・訂正・削除のご請求は同社までお申し付けください。</p>
+        <p>本フォームでお預かりする個人情報は、宅地建物取引業者である株式会社青山綜合地所（<span class="nw">東京都知事（3）第99195号</span>／東京都中央区湊2-11-1 <span class="nw">シティタワー銀座東922</span>）が取得し、同社の<a href="privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に従って取り扱います。個別相談は、同社から業務委託を受けたタワマン大家が担当し、委託の範囲内で個人情報を取り扱います。特典資料は、LINE公式アカウント<span class="nw">「BAI Capital」</span>からお届けします。利用目的は、資料のご提供、個別相談のご案内および関連するご連絡に限られ、業務の委託に伴う場合を除き、ご本人の同意なく第三者に提供することはありません。開示・訂正・削除のご請求は同社までお申し付けください。</p>
       </div>
 
       <div class="consent">
@@ -623,8 +623,8 @@
     <div class="formcard form-thanks" id="form-thanks" tabindex="-1" hidden>
       <p class="eyebrow">Thank you</p>
       <h3 class="thanks-title">ご回答ありがとうございました。</h3>
-      <p>特典のセミナー資料は、LINE公式アカウント「BAI Capital」からお届けします。下のボタンから友だち追加してください。個別相談をご希望の方には、担当者より数日以内にご連絡します。</p>
-      <!-- LINE公式アカウント「BAI Capital」（@081gacuo）の友だち追加URL -->
+      <p>特典のセミナー資料は、LINE公式アカウント<span class="nw">「BAI Capital」</span>からお届けします。下のボタンから友だち追加してください。個別相談をご希望の方には、担当者より数日以内にご連絡します。</p>
+      <!-- LINE公式アカウント<span class="nw">「BAI Capital」</span>（@081gacuo）の友だち追加URL -->
       <a class="btn" href="https://lin.ee/ubsOrvo" target="_blank" rel="noopener">LINEで友だち追加して資料を受け取る</a>
       <p class="hint">パソコンでご覧の方は、ボタンを押すと表示されるQRコードをスマートフォンのLINEで読み取ってください。</p>
     </div>
@@ -665,7 +665,7 @@
       </div>
       <div class="faq-row">
         <div class="faq-q">物件の紹介や購入まで対応してもらえますか？</div>
-        <div class="faq-a">売買の媒介・代理は、連携する宅地建物取引業者 青山綜合地所 が担います。相談から取得まで一本の線でつながる一方、買うべきでないと判断した場合はそう申し上げます。</div>
+        <div class="faq-a">売買の媒介・代理は、連携する宅地建物取引業者の青山綜合地所が担います。相談から取得まで一本の線でつながる一方、買うべきでないと判断した場合はそう申し上げます。</div>
       </div>
       <div class="faq-row">
         <div class="faq-q">地方在住でも受けられますか？</div>
@@ -679,7 +679,7 @@
 <section class="band final">
   <div class="wrap">
     <h2 class="h2">まず、現在地を測るところから。</h2>
-    <p class="lead">約2分のアンケートにお答えのうえ、LINE公式アカウント「BAI Capital」を友だち追加いただくと、セミナー資料をお届けします。個別相談をご希望の方には、別途、担当者よりご連絡します。</p>
+    <p class="lead">約2分のアンケートにお答えのうえ、LINE公式アカウント<span class="nw">「BAI Capital」</span>を友だち追加いただくと、セミナー資料をお届けします。<br>個別相談を<span class="nw">ご希望の方</span>には、別途、担当者よりご連絡します。</p>
     <a class="btn" href="#form">無料特典をLINEで受け取る</a>
   </div>
 </section>
@@ -689,7 +689,7 @@
 <!-- ============================== フッター ============================== -->
 <footer class="footer">
   <div class="wrap">
-    <p class="footer-legal">本個別相談は、宅地建物取引業者 株式会社青山綜合地所（宅地建物取引業免許：東京都知事（3）第99195号／東京都中央区湊2-11-1 シティタワー銀座東922）が提供し、同社から業務委託を受けたタワマン大家が担当します。売買の媒介・代理は同社が行います。お預かりした個人情報は同社の<a href="privacy/">プライバシーポリシー</a>に従って取り扱います。投資成果および融資の実行を保証するものではありません。最終的な投資判断はご自身の責任においてお願いいたします。</p>
+    <p class="footer-legal">本個別相談は、宅地建物取引業者である株式会社青山綜合地所（宅地建物取引業免許：<span class="nw">東京都知事（3）第99195号</span>／東京都中央区湊2-11-1 <span class="nw">シティタワー銀座東922</span>）が提供し、同社から業務委託を受けたタワマン大家が担当します。売買の媒介・代理は同社が行います。お預かりした個人情報は同社の<a href="privacy/">プライバシーポリシー</a>に従って取り扱います。投資成果および融資の実行を保証するものではありません。最終的な投資判断はご自身の責任においてお願いいたします。</p>
     <div class="rule"></div>
     <div class="footer-row">
       <div>タワマン大家</div>
