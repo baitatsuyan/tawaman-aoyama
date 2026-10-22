@@ -395,6 +395,8 @@ legend { padding: 0; }
 @media (max-width: 1000px) {
   body { font-size: 15px; }
   .sp-only { display: inline; }
+  /* スマホ幅は1行の文字数が少なく、両端揃えだと行ごとに字間が伸び縮みして読みにくいので左揃え */
+  p, dd, .card-body, .body, .d, .faq-a, .plan-body, .callout { text-align: start; }
   .wrap { padding: 0 20px; }
   .hero .wrap { padding-top: 20px; }
   .rule-dark { margin: 20px 0 36px; }
