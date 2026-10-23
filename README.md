@@ -12,6 +12,8 @@
 │   ├── privacy/          プライバシーポリシー
 │   ├── dl/…/*.pdf        特典PDF（LINE でだけ案内する）
 │   ├── _headers          特典PDFを noindex にする
+│   ├── robots.txt        検索エンジン向け（/dl/ を除外、サイトマップの場所）
+│   ├── sitemap.xml       検索エンジンに知らせるページの一覧（ページを増やしたら追記）
 │   └── assets/
 │       ├── style.css     スタイル
 │       ├── form.js       フォーム送信（Google フォーム）
