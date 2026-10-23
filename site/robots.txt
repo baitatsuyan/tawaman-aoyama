@@ -1,4 +1,7 @@
 User-agent: *
-Disallow: /dl/
+Allow: /
+
+# 特典PDF（/dl/）はここで止めず、_headers の noindex で検索結果から外す
+# （robots.txt でクロールを止めると noindex が読まれず、URL だけ載ることがあるため）
 
 Sitemap: https://tawamanoya-aoyama.netlify.app/sitemap.xml
